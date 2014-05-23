@@ -46,9 +46,6 @@ inline void rx_di();
 inline void tx_ei();
 inline void tx_di();
 
-// Function to store the char into the RX buffer.
-inline void store_char(unsigned char c);
-
 // Initialize serial port settings and enable interrupts
 void serialBegin(int baudRate);
 
