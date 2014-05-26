@@ -79,8 +79,8 @@ void serialBegin(int baudRate)
     IPR1bits.TXIP = 0;			// TX is set to low priority
     IPR1bits.RCIP = 1;			// TX is set to low priority
     INTCONbits.PEIE = 1;		// Enable Pheripheral interrupts
-    rx_ei();					// UART RX interrupt
-    ei();						// Global interrupt enable
+    rx_ei();				// UART RX interrupt
+    ei();				// Global interrupt enable
 }
 
 // Writes a character to the serial buffer
