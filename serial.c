@@ -38,7 +38,9 @@ inline void tx_ei(){
 }
 inline void tx_di(){
 	PIE1bits.TXIE=0;
-}	
+}
+
+// Ok this is a git test!!
 
 // Initialize serial port settings and enable interrupts
 void serialBegin(int baudRate)
